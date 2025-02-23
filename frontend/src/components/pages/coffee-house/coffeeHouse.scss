@@ -1,0 +1,88 @@
+@import '../../divider/divider.scss';
+
+.coffee-house {
+    min-height: 640px;
+    color: #fff;
+    text-align: center;  
+    
+    .coffee-beans {
+        &__img {
+            margin: 0 20px 0 20px;
+            filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+        }
+        @include divider(#fff);
+    }
+
+    &__h1 {
+        font-size: 40px;
+    }
+    &__h2 {
+        font-size: 24px;
+    }
+    &__btn {
+        width: 120px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px #fff solid;
+
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+
+        font-size: 14px;
+
+        box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .mt-18 {
+        margin-top: 18px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .mt-35 {
+        margin-top: 35px;
+    }
+
+    .mt-110 {
+        margin-top: 110px;
+    }
+}
+
+.about-us {
+    min-height: 520px;
+    margin: 0 auto;
+    text-align: center;
+
+    .container {
+        padding-top: 80px;
+    }
+
+    .coffee-beans {
+        margin-top: 20px;
+        &__img {
+            margin: 0 20px 0 20px;
+            filter: invert(1);
+        }
+        @include divider(#000000);
+    }
+
+    &__h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__p {
+        max-width: 590px;
+        margin: 40px auto 0 auto;
+        font-size: 14px;
+    }
+}
+
+.coffee-cards__our-best {
+    .container {
+        padding-top: 80px;
+    }
+}

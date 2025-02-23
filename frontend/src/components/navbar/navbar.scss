@@ -1,0 +1,26 @@
+.navbar {
+
+    font-size: 13px;
+    color: #fff;
+
+    width: 340px;
+    height: 40px;
+
+    &__logo {
+        display: inline-block;
+    }
+
+    &__items {
+
+        &_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+
+    &__block {
+        padding-top: 30px;
+    }
+
+}

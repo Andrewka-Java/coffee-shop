@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Merienda';
+    src: url(../fonts/Merienda.ttf);
+}
+
+* {
+    font-family: "Merienda", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.shadow-text {
+    text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-box {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    box-shadow: 0 4px 5px rgba(#e08d8d, 0.5);
+}

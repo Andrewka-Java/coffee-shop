@@ -1,0 +1,22 @@
+@mixin divider($bgColor) {
+    &::before,
+    &::after {
+        content: '';
+        display: inline-block;
+        background-color: $bgColor;
+        height: 1px;
+        width: 60px;
+        transform: translateY(-1200%);
+    }
+}
+
+.divider {
+    text-align: center;
+}
+
+.divider1 {
+    height: 1px;
+    width: 240px;
+    margin: 60px auto 0 auto;
+    background-color: #000000;
+}

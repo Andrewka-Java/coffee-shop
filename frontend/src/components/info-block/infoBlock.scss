@@ -1,0 +1,53 @@
+@import '../divider/divider.scss';
+
+.info-block {
+    min-height: 485px;
+
+    .container {
+        padding-top: 70px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+
+    .coffee-beans {
+        margin-top: 20px;
+        &__img {
+            margin: 0 20px 0 20px;
+            filter: invert(1);
+        }
+        @include divider(#000000)
+    }
+
+    &__left {
+        display: flex;
+        justify-content: end;
+        padding-right: 30px;
+    }
+
+    &__img {
+        max-height: 355px;
+        object-fit: contain;
+    }
+
+    &__right-left,
+    &__right-center {
+        width: 346px;
+        max-height: 355px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &__h2 {
+        margin-top: 9px;
+        text-align: center;
+    }
+    &__p {
+        margin-top: 26px;
+        line-height: 1.6;
+    }
+}

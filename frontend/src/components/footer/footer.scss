@@ -1,0 +1,26 @@
+@import '../divider/divider.scss';
+
+.footer {
+    text-align: center;
+    padding-top: 30px;
+
+    .navbar {
+        margin: 0 auto;
+        color: #000000;
+
+        &__logo {
+            filter: invert(1);
+        }
+    }
+
+    .coffee-beans {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        &__img {
+            margin: 0 20px 0 20px;
+            filter: invert(1);
+        }
+        @include divider(#000000);
+    }
+
+}

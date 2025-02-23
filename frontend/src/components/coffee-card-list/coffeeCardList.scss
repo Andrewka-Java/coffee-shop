@@ -1,0 +1,18 @@
+.coffee-cards {
+    min-height: 495px;
+    text-align: center;
+
+    &__wrapper {
+        margin: 39px 170px auto 170px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        grid-auto-flow: row;
+        column-gap: 70px;
+        row-gap: 60px;
+    }
+
+    &__h2 {
+        font-size: 24px;
+    }
+
+}

@@ -1,0 +1,6 @@
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('AROMISTICO Coffee 1 kg', '6.99', 'Brazil', 'coffee_aromistico.png')
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('Solimo Coffee Beans 2kg', '10.73', 'Kenya', 'coffee_solimo.png')
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('Presto Coffee Beans 1 kg', '15.99', 'Brazil', 'coffee_presto.png')
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('Cafe de Colombia Excelso 0.5 kg', '5.79', 'Columbia', 'coffee_colombia.jpg')
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('Java House Espresso Rice Caramel Chocolate Hand Roasted Ground Coffee 0.375 kg', '55.34', 'Kenya', 'coffee_czarna-kawka.jpg')
+INSERT INTO coffee("name", "price", "country", "img_name") VALUES ('Espresso coffee classic 0.7 kg', '5.28', 'Columbia', 'coffee_espresso.jpg')

@@ -1,0 +1,12 @@
+@import '../../divider/divider.scss';
+
+.our-coffee {
+    min-height: 260px;
+    text-align: center;
+
+    &__h1 {
+        margin-top: 60px;
+        font-size: 40px;
+        color: #fff;
+    }
+}
