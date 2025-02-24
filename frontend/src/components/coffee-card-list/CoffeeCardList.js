@@ -20,6 +20,7 @@ const CoffeeCardList = ({ search, filterByCountry, limit, style }) => {
 
 export const CoffeeCardListView = ({ search, filterByCountry, limit }) => {
 
+    const [loading, setLoading] = useState(true)
     const [coffeeList, setCoffeeList] = useState([])
     const { getAllCoffee, process, setProcess } = useCoffeShopService()
 
@@ -27,7 +28,8 @@ export const CoffeeCardListView = ({ search, filterByCountry, limit }) => {
         getAllCoffee(search, filterByCountry, limit)
             .then(list => setCoffeeList(list))
             .then(() => setProcess('confirmed'))
-    }, [search, limit, filterByCountry])
+        setLoading(false)
+    }, [loading, process, search, limit, filterByCountry])
 
     return (
         <>
@@ -35,7 +37,7 @@ export const CoffeeCardListView = ({ search, filterByCountry, limit }) => {
                 setContent(
                     process,
                     () => coffeeList.map(coffee => <CoffeeCard coffee={coffee} />),
-                    true
+                    loading
                 )
             }
         </>

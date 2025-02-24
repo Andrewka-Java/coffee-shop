@@ -5,6 +5,8 @@ import espresso from '../resources/img/coffee_espresso.jpg'
 import presto from '../resources/img/coffee_presto.png'
 import solimo from '../resources/img/coffee_solimo.png'
 
+import Spinner from '../components/spinner/Spinner'
+
 export const img = {
     'coffee_aromistico.png': aromistico,
     'coffee_colombia.jpg': colombia,
@@ -17,9 +19,9 @@ export const img = {
 export const setContent = (process, Component, loading) => {
     switch (process) {
         case 'waiting':
-            return <p>Waiting</p>
+            return <Spinner />
         case 'loading':
-            return loading ? Component() : <p>Spinner</p>
+            return loading ? Component() : <Spinner />
         case 'confirmed':
             return Component()
         case 'error':

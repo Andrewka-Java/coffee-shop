@@ -10,6 +10,7 @@ import { setContent } from '../../../util/Util';
 const CoffeeInfoBlock = () => {
     const { id } = useParams()
 
+    const [loading, setLoading] = useState(true)
     const [coffee, setCoffee] = useState({})
     const { getCoffee, process, setProcess } = useCoffeShopService()
 
@@ -17,6 +18,7 @@ const CoffeeInfoBlock = () => {
         getCoffee(id)
             .then(coffee => setCoffee(coffee))
             .then(() => setProcess('confirmed'))
+        setLoading(false)
     }, [])
 
     return (
@@ -31,7 +33,7 @@ const CoffeeInfoBlock = () => {
                 setContent(
                     process,
                     () => View(coffee),
-                    true
+                    loading
                 )
             }
 

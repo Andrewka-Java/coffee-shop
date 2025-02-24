@@ -12,13 +12,13 @@ const OurCoffee = () => {
     const [country, setCountry] = useState(null)
 
     const handleSearchInput = (e) => {
-        setSearch(e.target.value); // Just update state
-    };
+        setSearch(e.target.value)
+    }
 
     const handleCountry = (e) => {
-        const text = e.target.innerText; // Corrected from e.target.text
-        setCountry(text === country ? null : text); // Toggle active state
-    };
+        const text = e.target.innerText
+        setCountry(text === country ? null : text)
+    }
 
     return (
         <>
